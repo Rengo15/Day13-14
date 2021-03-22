@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  
+  
+  body {
+    
+    position: relative;
+    height: auto;
+  }
+  .main-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: white;
+    font-weight: normal;
+  }
+  h1:hover {
+    cursor: pointer;
+  }
+  
+  
+  .img {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 5px;
+    position: relative;
+    
+  }
+  
+  .thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+  }
+  
+  
+  
+  
+  
+  .black {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: inherit;
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s ease;
+    background-color: #000;
+  }
+  .img:hover .black {
+    opacity: 0.5;
+  }
+  
+  .title1 {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+  }
+  
+  
+  
+  .modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-top: 5%;
+    display: none;
+  }
+  
+  #frame1 {
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    border-radius: 3px;
+    display: block;
+    width: 75%;
+    height: 450px;
+    margin: auto;
+  }
+  
+  #close {
+    font-size: 1.6em;
+    font-weight: 900;
+    color: rgb(250, 250, 250, 0.8);
+    position: absolute;
+    right: 5%;
+    top: 1%;
+  }
+  
+  #close:hover {
+    cursor: pointer;
+  }
+  
+  
+  .full-size {
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 250, 250, 0.9);
+  }
+  
+  .full-size img {
+    
+    width: 200px;
+  }
+  
+  .full-size h1 {
+    color: #000;
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin: 20px 0px 8px 0px;
+  }
+  
+  .full-size p {
+    font-size: 0.7em;
+    width: 400px;
+  }
+  
+
+  
+  
